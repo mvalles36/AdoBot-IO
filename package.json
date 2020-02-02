@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "NodeJS port of Dendroid server",
   "main": "index.js",
+  "engines": {
+    "node": "v12.14.1",
+    "npm": "6.13.7",
   "scripts": {
     "migrate": "./node_modules/.bin/sequelize db:migrate",
     "build": "./node_modules/.bin/gulp",
@@ -10,6 +13,7 @@
     "postinstall": "run-s migrate build",
     "dev": "run-s build start"
   },
+},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/adonespitogo/dendroid-nodejs.git"
